@@ -18,6 +18,10 @@
         left: 0;
         bottom: 30px;
 
+        @include xs {
+            display: none;
+        }
+
         .fixall {
             border-style: solid;
             border-width: 1px;

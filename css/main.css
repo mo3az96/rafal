@@ -386,6 +386,11 @@ header .lang.open:hover {
   left: 0;
   bottom: 30px;
 }
+@media (max-width: 767px) {
+  .main-sec .headerDownBtn-section {
+    display: none;
+  }
+}
 .main-sec .headerDownBtn-section .fixall {
   border-style: solid;
   border-width: 1px;
