@@ -1364,6 +1364,142 @@ html[dir=ltr] .singlebtn {
   color: #fff;
 }
 
+.home-clients-title {
+  color: #fff;
+  font-family: bold;
+  font-size: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .home-clients-title {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 25px;
+  }
+}
+
+.clients-cont {
+  background-image: url("../images/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+@media (max-width: 992px) {
+  .clients-cont {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client {
+  width: 25%;
+  position: relative;
+  margin-left: 30px;
+}
+html[dir=ltr] .client {
+  margin-left: 0;
+  margin-right: 30px;
+}
+.client:nth-of-type(4n) {
+  margin-left: 0;
+}
+html[dir=ltr] .client:nth-of-type(4n) {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 992px) {
+  .client {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.client-img {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(50%);
+}
+.client-img img.img-responsive {
+  width: auto;
+}
+
+.client-info {
+  padding: 0 40px 25px;
+  padding-top: 100px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.client-name {
+  color: #333;
+  font-family: bold;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.client-desc {
+  color: #222;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.clients-page-cont {
+  padding-top: 85px;
+  padding-bottom: 100px;
+  background-color: #e9ebee;
+}
+.clients-page-cont .seemore {
+  margin-top: 60px;
+}
+
+.clients-page {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .clients-page {
+    flex-direction: column;
+  }
+}
+.clients-page .client {
+  width: calc(25% - 22.5px);
+  position: relative;
+  margin-left: 30px;
+}
+.clients-page .client:nth-of-type(4n) {
+  margin-left: 0;
+}
+html[dir=ltr] .clients-page .client:nth-of-type(4n) {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 767px) {
+  .clients-page .client {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 footer {
   background-color: #333;
 }

@@ -1,0 +1,138 @@
+.home-clients-title {
+    color: #fff;
+    font-family: bold;
+    font-size: 30px;
+    margin-bottom: 50px;
+    position: relative;
+
+    @include sm {
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+.clients-cont {
+    background-image: url("../images/main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 100px;
+
+    @include sm {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+}
+
+.clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client {
+    width: 25%;
+    position: relative;
+    margin-left: 30px;
+
+    #{$ltr} & {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    &:nth-of-type(4n) {
+        margin-left: 0;
+
+        #{$ltr} & {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    @include sm {
+        margin: auto;
+        width: 100%;
+    }
+}
+
+.client-img {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(50%);
+
+    img.img-responsive {
+        width: auto;
+    }
+}
+
+.client-info {
+    padding: 0 40px 25px;
+    padding-top: 100px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.client-name {
+    color: $bg;
+    font-family: bold;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.client-desc {
+    color: $copy;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.clients-page-cont {
+    padding-top: 85px;
+    padding-bottom: 100px;
+    background-color: #e9ebee;
+
+    .seemore {
+        margin-top: 60px;
+    }
+}
+
+.clients-page {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include xs {
+        flex-direction: column;
+    }
+
+    .client {
+        width: calc(25% - 22.5px);
+        position: relative;
+        margin-left: 30px;
+
+        &:nth-of-type(4n) {
+            margin-left: 0;
+
+            #{$ltr} & {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        @include xs {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
