@@ -1,0 +1,47 @@
+.owl-carousel {
+    .owl-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+
+        .owl-dot {
+            background: rgba(#fff, 0.502);
+            outline: none;
+            border: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 4px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.active {
+                background: $logo;
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: $logo;
+            }
+        }
+    }
+}
+
+.gallery-cont {
+    .owl-carousel {
+        .owl-dots {
+            .owl-dot {
+                background: rgba($bg, 0.502);
+
+                &.active {
+                    background: $logo;
+                }
+
+                &:hover {
+                    background: $logo;
+                }
+            }
+        }
+    }
+}

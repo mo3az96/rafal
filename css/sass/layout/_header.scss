@@ -1,0 +1,117 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    .header {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include xs {
+            height: auto;
+            padding-top: 25px;
+        }
+    }
+
+    .menubtn {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 25px;
+        cursor: pointer;
+        position: relative;
+        z-index: 999;
+
+        span {
+            width: 25px;
+            height: 2px;
+            background-color: #f5f5f5;
+            display: flex;
+            @include transition(all 0.3s ease-in-out);
+            position: relative;
+
+            &.med {
+                width: 14px;
+                margin: 6px 0;
+            }
+        }
+
+        &:hover {
+
+            span {
+                background-color: $logo;
+
+                &.med {
+                    width: 25px;
+                }
+            }
+        }
+
+        &.open {
+            span {
+                background-color: $bg;
+
+                &:nth-child(1) {
+                    top: 8px;
+                    -webkit-transform: rotate(135deg);
+                    -moz-transform: rotate(135deg);
+                    -o-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                }
+
+                &:nth-child(2) {
+                    visibility: hidden;
+                    transform: translateX(60px);
+                }
+
+                &:nth-child(3) {
+                    top: -8px;
+                    -webkit-transform: rotate(-135deg);
+                    -moz-transform: rotate(-135deg);
+                    -o-transform: rotate(-135deg);
+                    transform: rotate(-135deg);
+                }
+            }
+
+            &:hover {
+                span {
+                    background-color: $logo;
+                }
+            }
+        }
+    }
+
+    .lang {
+        font-size: 17px;
+        color: #f5f5f5;
+        font-family: med;
+        @include transition(all 0.3s ease-in-out);
+        position: relative;
+        z-index: 999;
+
+        @include xs {
+            z-index: 9;
+        }
+
+        &:hover {
+            color: $logo;
+        }
+
+        &.open {
+            color: $bg;
+
+            @include xs {
+                color: #f5f5f5;
+            }
+
+            &:hover {
+                color: $logo;
+            }
+        }
+    }
+}
