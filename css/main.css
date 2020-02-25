@@ -367,6 +367,7 @@ header .lang.open:hover {
 }
 @media (max-width: 767px) {
   .main-sec {
+    background-attachment: unset;
     height: 300px;
   }
 }
