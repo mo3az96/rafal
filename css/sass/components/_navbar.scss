@@ -64,6 +64,11 @@ nav {
         &:hover {
             color: $logo;
         }
+
+        &.active {
+            pointer-events: none;
+            color: $logo;
+        }
     }
 }
 
