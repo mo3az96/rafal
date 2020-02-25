@@ -26,6 +26,12 @@ nav {
         background-color: #fff;
         @include transition(all 0.5s ease-in-out);
 
+
+
+        #{$ltr} & {
+            transform-origin: left;
+        }
+
         &.open {
             transform: scaleX(1);
             opacity: 1;
@@ -58,5 +64,48 @@ nav {
         &:hover {
             color: $logo;
         }
+    }
+}
+
+
+.inner-header {
+    .nav-ul {
+        padding-right: 26px;
+
+        #{$ltr} & {
+            padding-left: 26px;
+            padding-right: 0;
+        }
+    }
+
+    .nav-li {
+        margin: 0 15px;
+
+        @include sm {
+            margin: 0 10px;
+        }
+
+        &:nth-of-type(3) {
+            margin-left: 120px;
+
+            #{$ltr} & {
+                margin-right: 120px;
+                margin-left: 0;
+            }
+
+            @include sm {
+                margin-left: 100px;
+
+                #{$ltr} & {
+                    margin-right: 100px;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        @include xs {
+            margin: 7px 0;
+        }
+
     }
 }

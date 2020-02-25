@@ -125,10 +125,18 @@ html {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  text-align: right;
+}
+html[dir=ltr] .newsletter-input {
+  text-align: left;
 }
 .newsletter-input::placeholder {
   color: rgba(0, 0, 0, 0.52);
   font-size: 17px;
+  text-align: right;
+}
+html[dir=ltr] .newsletter-input::placeholder {
+  text-align: left;
 }
 .newsletter-input:hover {
   border: 2px solid transparent;
@@ -159,6 +167,10 @@ html {
 }
 .newsletter-button:hover {
   color: #fec300;
+}
+html[dir=ltr] .newsletter-button {
+  left: auto;
+  right: 20px;
 }
 
 nav {
@@ -193,6 +205,9 @@ nav .nav-ul {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+html[dir=ltr] nav .nav-ul {
+  transform-origin: left;
+}
 nav .nav-ul.open {
   transform: scaleX(1);
   opacity: 1;
@@ -226,6 +241,43 @@ nav .nav-link {
 }
 nav .nav-link:hover {
   color: #d7b132;
+}
+
+.inner-header .nav-ul {
+  padding-right: 26px;
+}
+html[dir=ltr] .inner-header .nav-ul {
+  padding-left: 26px;
+  padding-right: 0;
+}
+.inner-header .nav-li {
+  margin: 0 15px;
+}
+@media (max-width: 992px) {
+  .inner-header .nav-li {
+    margin: 0 10px;
+  }
+}
+.inner-header .nav-li:nth-of-type(3) {
+  margin-left: 120px;
+}
+html[dir=ltr] .inner-header .nav-li:nth-of-type(3) {
+  margin-right: 120px;
+  margin-left: 0;
+}
+@media (max-width: 992px) {
+  .inner-header .nav-li:nth-of-type(3) {
+    margin-left: 100px;
+  }
+  html[dir=ltr] .inner-header .nav-li:nth-of-type(3) {
+    margin-right: 100px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .inner-header .nav-li {
+    margin: 7px 0;
+  }
 }
 
 .owl-carousel .owl-dots {
@@ -330,6 +382,9 @@ header .menubtn.open span:nth-child(2) {
   visibility: hidden;
   transform: translateX(60px);
 }
+html[dir=ltr] header .menubtn.open span:nth-child(2) {
+  transform: translateX(-60px);
+}
 header .menubtn.open span:nth-child(3) {
   top: -8px;
   -webkit-transform: rotate(-135deg);
@@ -350,6 +405,10 @@ header .lang {
   transition: all 0.3s ease-in-out;
   position: relative;
   z-index: 999;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 @media (max-width: 767px) {
   header .lang {
@@ -362,8 +421,79 @@ header .lang:hover {
 header .lang.open {
   color: #333;
 }
+@media (max-width: 767px) {
+  header .lang.open {
+    color: #f5f5f5;
+  }
+}
 header .lang.open:hover {
   color: #d7b132;
+}
+header.inner-header {
+  position: relative;
+  background-color: #333;
+}
+@media (max-width: 767px) {
+  header.inner-header .header {
+    padding: 15px 0;
+  }
+}
+header.inner-header .logo {
+  display: flex;
+  width: 90px;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+}
+@media (max-width: 767px) {
+  header.inner-header .logo {
+    z-index: 1;
+  }
+}
+
+.breadcrumb-sec {
+  position: relative;
+  background-color: #222;
+}
+
+ol.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  ol.breadcrumb {
+    height: 70px;
+  }
+}
+
+ol.breadcrumb li {
+  font-size: 20px;
+  color: #fff;
+  cursor: default;
+}
+
+ol.breadcrumb li.active {
+  color: #fec300;
+}
+
+ol.breadcrumb li a {
+  font-size: 20px;
+  color: #fff;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+ol.breadcrumb li a:hover {
+  color: #fec300;
 }
 
 .main-sec {
@@ -616,8 +746,16 @@ header .lang.open:hover {
   transition: all 0.3s ease-in-out;
   backface-visibility: hidden;
 }
+html[dir=ltr] .service {
+  margin-left: 0;
+  margin-right: 30px;
+}
 .service:nth-of-type(3n) {
   margin-left: 0;
+}
+html[dir=ltr] .service:nth-of-type(3n) {
+  margin-left: 0;
+  margin-right: 0;
 }
 .service:hover {
   -webkit-box-shadow: 0px 0px 25px 10px #000;
@@ -706,6 +844,10 @@ header .lang.open:hover {
   height: 530px;
   margin-bottom: 30px;
 }
+html[dir=ltr] .gallery-img {
+  margin-left: 0;
+  margin-right: 30px;
+}
 @media (min-width: 1440px) {
   .gallery-img {
     height: 615px;
@@ -740,6 +882,10 @@ header .lang.open:hover {
 }
 .gallery-img:nth-of-type(3n) {
   margin-left: 0;
+}
+html[dir=ltr] .gallery-img:nth-of-type(3n) {
+  margin-left: 0;
+  margin-right: 0;
 }
 .gallery-img .gallery-overlay {
   position: absolute;
@@ -827,8 +973,16 @@ header .lang.open:hover {
   position: relative;
   margin-left: 30px;
 }
+html[dir=ltr] .client {
+  margin-left: 0;
+  margin-right: 30px;
+}
 .client:last-of-type(4n) {
   margin-left: 0;
+}
+html[dir=ltr] .client:last-of-type(4n) {
+  margin-left: 0;
+  margin-right: 0;
 }
 @media (max-width: 992px) {
   .client {

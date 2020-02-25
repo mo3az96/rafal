@@ -239,8 +239,18 @@
     @include transition(all 0.3s ease-in-out);
     backface-visibility: hidden;
 
+    #{$ltr} & {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
     &:nth-of-type(3n) {
         margin-left: 0;
+
+        #{$ltr} & {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
     &:hover {
@@ -329,6 +339,11 @@
     height: 530px;
     margin-bottom: 30px;
 
+    #{$ltr} & {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
     @media (min-width: 1440px) {
         height: 615px;
     }
@@ -360,6 +375,11 @@
 
     &:nth-of-type(3n) {
         margin-left: 0;
+
+        #{$ltr} & {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
     .gallery-overlay {
@@ -448,8 +468,18 @@
     position: relative;
     margin-left: 30px;
 
+    #{$ltr} & {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
     &:last-of-type(4n) {
         margin-left: 0;
+
+        #{$ltr} & {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
     @include sm {

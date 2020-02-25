@@ -13,10 +13,20 @@
     font-size: 17px;
     border: 2px solid transparent;
     @include transition(all 0.3s ease-in-out);
+    text-align: right;
+
+    #{$ltr} & {
+        text-align: left;
+    }
 
     &::placeholder {
         color: rgba(0, 0, 0, 0.52);
         font-size: 17px;
+        text-align: right;
+
+        #{$ltr} & {
+            text-align: left;
+        }
     }
 
     &:hover {
@@ -48,5 +58,10 @@
 
     &:hover {
         color: $gold;
+    }
+
+    #{$ltr} & {
+        left: auto;
+        right: 20px;
     }
 }
