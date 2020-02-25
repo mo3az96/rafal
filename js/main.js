@@ -34,6 +34,12 @@ $(window).on("load", function () {
 
 
 $(document).ready(function () {
+    $("#topBtn").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#topBtnRef").offset().top
+        }, 2000);
+    });
+
     $('.menubtn').click(function () {
         $(this).toggleClass('open');
         $(".lang").toggleClass('open');
