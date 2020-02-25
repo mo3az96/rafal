@@ -35,10 +35,10 @@
             <ul class="nav-ul fixall list-unstyled">
                 <li class="nav-li fixall"><a href="index.html" class="nav-link fixall">الرئيسية</a></li>
                 <li class="nav-li fixall"><a href="#!" class="nav-link fixall">من نحن</a></li>
-                <li class="nav-li fixall"><a href="contact.html" class="nav-link fixall">إتصل بنا</a></li>
+                <li class="nav-li fixall"><a href="contact.html" class="nav-link fixall active">إتصل بنا</a></li>
                 <li class="nav-li fixall"><a href="#!" class="nav-link fixall">الأخبار</a></li>
-                <li class="nav-li fixall"><a href="gallery.html" class="nav-link fixall">معرض الصور</a></li>
-                <li class="nav-li fixall"><a href="services.html" class="nav-link active fixall">الخدمات</a></li>
+                <li class="nav-li fixall"><a href="gallery.html" class="nav-link fixall ">معرض الصور</a></li>
+                <li class="nav-li fixall"><a href="services.html" class="nav-link fixall">الخدمات</a></li>
             </ul>
         </nav>
         <!-- End Navbar -->
@@ -49,85 +49,107 @@
         <div class="container">
             <ol class="breadcrumb">
                 <li><a href="index.html" class="fixall">الرئيسية</a></li>
-                <li class="active"><a href="services.html" class="fixall">الخدمات</a></li>
-                <li class="active">إسم الخدمة</li>
+                <li class="active">إتصل بنا</li>
             </ol>
         </div>
     </div>
     <!-- End Breadcrumb -->
 
-    <!-- Start single Page -->
-    <div class="single-cont">
+    <!-- Start Contact Page -->
+    <div class="contact-cont">
         <div class="container">
-            <div class="single">
-                <div class="single-img">
-                    <img src="images/serv1.png" class="img-responsive">
-                </div>
-                <p class="single-desc">
-                    هذا النص هو مثال لنص يمكن أن يستبدل
-                    في نفس المساحة، لقد تم توليد هذا النص
-                    من مولد النص العربى هذا النص هو مثال لنص يمكن أن يستبدل
-                    في نفس المساحة، لقد تم توليد هذا النص
-                    من مولد النص العربى هذا النص هو مثال لنص يمكن أن يستبدل
-                    في نفس المساحة، لقد تم توليد هذا النص
-                    من مولد النص العربى هذا النص هو مثال لنص يمكن أن يستبدل
-                    في نفس المساحة، لقد تم توليد هذا النص
-                    من مولد النص العربى هذا النص هو مثال لنص يمكن أن يستبدل
-                    في نفس المساحة، لقد تم توليد هذا النص
-                    من مولد النص العربى
-                </p>
-                <p class="single-desc">
-                    هذا النص هو مثال لنص يمكن أن يستبدل
-                    في نفس المساحة، لقد تم توليد هذا النص
-                    من مولد النص العربى هذا النص هو مثال لنص يمكن أن يستبدل
-                    في نفس المساحة، لقد تم توليد هذا النص
-                    من مولد النص العربى هذا النص هو مثال لنص يمكن أن يستبدل
-                    في نفس المساحة، لقد تم توليد هذا النص
-                    من مولد النص العربى هذا النص هو مثال لنص يمكن أن يستبدل
-                    في نفس المساحة، لقد تم توليد هذا النص
-                    من مولد النص العربى هذا النص هو مثال لنص يمكن أن يستبدل
-                    في نفس المساحة، لقد تم توليد هذا النص
-                    من مولد النص العربى
-                </p>
-                <div class="singlebtn">
-                    <a href="gallery.html" class="gallry-open fixall">عرض المعرض</a>
-                    <a href="#!" class="model-open fixall">الحصول على الخدمة</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- End single Page -->
-
-    <!-- Start Model -->
-    <div class="model-fixed">
-        <div class="model-cont">
-            <div class="have-modal">
-                <h5 class="fixall modal-head">
-                    أدخل البيانات للحصول على الخدمة
-                </h5>
-                <div class="modalContent">
-                    <form class="modal-form">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="contact-title fixall">
+                        أرسل استفسارك
+                    </h2>
+                    <form action="" class="contact-form">
                         <div class="input-label ">
                             <input class="input fixall" type="text">
                             <span class="floating-label">الإسم</span>
                         </div>
                         <div class="input-label ">
+                            <input class="input fixall" type="email">
+                            <span class="floating-label">البريد الإلكتروني</span>
+                        </div>
+                        <div class="input-label ">
                             <input class="input fixall" type="number">
                             <span class="floating-label">رقم الهاتف</span>
                         </div>
+                        <select class="fixall select">
+                            <option hidden>النوع</option>
+                            <option value="op1">اختيار 1</option>
+                            <option value="op2">اختيار 2</option>
+                            <option value="op3">اختيار 3</option>
+                            <option value="op4">اختيار 4</option>
+                            <option value="op5">اختيار 5</option>
+                        </select>
                         <div class="input-label textarea-label">
                             <textarea class="input fixall"></textarea>
-                            <span class="floating-label">التعليق</span>
+                            <span class="floating-label">الرساله</span>
                         </div>
                         <button type="submit" class="send fixall">إرسال</button>
                     </form>
                 </div>
-
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <h2 class="contact-title fixall">معلومات التواصل</h2>
+                        <ul id="conlist" class="fixall list-unstyled">
+                            <li>
+                                <a class="fixall" href="tel:0123456789">
+                                    <i class="icon-phone">
+                                    </i>
+                                    <span>
+                                        0123456789
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="fixall" href="mailto:info@tasawk.com.sa">
+                                    <i class="icon-envelope">
+                                    </i>
+                                    <span>
+                                        info@tasawk.com.sa
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="fixall" href="https://twitter.com">
+                                    <i class="icon-twitter">
+                                    </i>
+                                    <span>
+                                        twitter.com
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="fixall" href="https://www.instagram.com//">
+                                    <i class="icon-instagram">
+                                    </i>
+                                    <span>
+                                        instagram.com
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="fixall" href="https://www.facebook.com">
+                                    <i class="icon-facebook">
+                                    </i>
+                                    <span>
+                                        facebook.com
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="map">
+                            <div id="map" style="width: 100%; height: 100%;" long="46.5965967" lat="24.8653989"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- End Model -->
+    <!-- End Contact Page -->
 
     <!-- Start Footer -->
     <footer>

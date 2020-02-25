@@ -115,12 +115,12 @@ $(document).ready(function () {
         });
     }
 
-    $(' .modal-input').focus(function () {
+    $(' .input').focus(function () {
         // console.log($(this).parent().find(".floating-label"));
         $(this).parent().find(".floating-label").addClass('label-active');
     });
 
-    $(".modal-input").focusout(function () {
+    $(".input").focusout(function () {
         if ($(this).val() == '') {
             $(this).parent().find(".floating-label").removeClass('label-active');
         };
