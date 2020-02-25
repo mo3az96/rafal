@@ -114,4 +114,30 @@ $(document).ready(function () {
             }
         });
     }
+
+    $(' .modal-input').focus(function () {
+        // console.log($(this).parent().find(".floating-label"));
+        $(this).parent().find(".floating-label").addClass('label-active');
+    });
+
+    $(".modal-input").focusout(function () {
+        if ($(this).val() == '') {
+            $(this).parent().find(".floating-label").removeClass('label-active');
+        };
+    });
+
+
+    $('.model-open').click(function () {
+        $(".model-fixed").fadeIn(400)
+        $(".have-modal").addClass("show-modal");
+        $("body").addClass("overflow");
+    });
+    $('.model-fixed').click(function () {
+        $(".model-fixed").fadeOut(500)
+        $(".have-modal").removeClass("show-modal");
+        $("body").removeClass("overflow");
+    });
+    $('.have-modal').click(function (e) {
+        e.stopPropagation();
+    });
 });

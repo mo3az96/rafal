@@ -1,0 +1,137 @@
+.single-cont {
+    padding-top: 85px;
+    padding-bottom: 100px;
+    background-color: #e9ebee;
+}
+
+.single {
+    position: relative;
+}
+
+.single-img {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.single-desc {
+    color: $copy;
+    font-size: 17px;
+    line-height: 1.3;
+    font-family: med;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.singlebtn {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #{$ltr} & {
+        left: auto;
+        right: 0;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px;
+        height: 40px;
+        background-color: $bg;
+        color: #fff;
+        font-size: 14px;
+        font-family: bold;
+        margin: 0 5px;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            background-color: rgba($bg, 0.75);
+        }
+    }
+
+    @include xs {
+        margin: auto;
+        margin-top: 25px;
+        position: relative;
+
+    }
+
+}
+
+.model-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($bg, 0.5);
+    z-index: 99;
+    display: none;
+
+    .model-cont {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .have-modal {
+        width: 529px;
+        background-color: #fff;
+        padding: 30px 40px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        transform: translateY(-120%);
+        @include transition(all 0.3s ease-in-out);
+
+        &.show-modal {
+            transform: translateY(0);
+        }
+
+        @include xs {
+            width: 90%;
+        }
+    }
+
+    .modal-head {
+        color: $copy;
+        font-family: bold;
+        font-size: 25px;
+        margin-bottom: 50px;
+        position: relative;
+        text-align: center;
+    }
+
+    .send {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        background-color: $copy;
+        height: 50px;
+        margin: auto;
+        font-size: 20px;
+        color: #fff;
+        font-family: bold;
+        @include transition(all 0.3s ease-in-out);
+        position: relative;
+
+        &:hover {
+            background-color: rgba($bg, 0.95);
+            color: #fff;
+        }
+    }
+}
