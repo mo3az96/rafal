@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 .single-desc {
@@ -49,6 +49,7 @@
         font-size: 14px;
         font-family: bold;
         margin: 0 5px;
+        border-radius: 5px;
         @include transition(all 0.3s ease-in-out);
 
         &:hover {
@@ -58,8 +59,8 @@
 
     @include xs {
         margin: auto;
-        margin-top: 25px;
-        position: relative;
+        margin: 25px 0;
+        position: static;
 
     }
 

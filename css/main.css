@@ -1201,7 +1201,7 @@ html[dir=ltr] .services-page .service:nth-of-type(3n) {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 .single-desc {
@@ -1236,6 +1236,7 @@ html[dir=ltr] .singlebtn {
   font-size: 14px;
   font-family: bold;
   margin: 0 5px;
+  border-radius: 5px;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1247,8 +1248,8 @@ html[dir=ltr] .singlebtn {
 @media (max-width: 767px) {
   .singlebtn {
     margin: auto;
-    margin-top: 25px;
-    position: relative;
+    margin: 25px 0;
+    position: static;
   }
 }
 
