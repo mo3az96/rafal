@@ -13,6 +13,27 @@ nav {
         background-color: rgba($bg, 0.5);
     }
 
+    img.img-responsive {
+        display: none;
+        width: 50px;
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include xs {
+            display: block;
+        }
+    }
+
+    .social {
+        display: none;
+
+        @include xs {
+            display: flex;
+        }
+    }
+
     .nav-ul {
         display: flex;
         align-items: center;

@@ -1,5 +1,5 @@
 .home-clients-title {
-    color: #fff;
+    color: $bg;
     font-family: bold;
     font-size: 30px;
     margin-bottom: 50px;
@@ -13,16 +13,13 @@
 }
 
 .clients-cont {
-    background-image: url("../images/main.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #e9ebee;
     position: relative;
-    padding-top: 110px;
+    padding-top: 75px;
     padding-bottom: 100px;
 
     @include sm {
-        padding-top: 75px;
+        padding-top: 50px;
         padding-bottom: 75px;
     }
 }
@@ -70,6 +67,7 @@
     position: relative;
     overflow: hidden;
     transform: translateY(50%);
+    border: 5px solid #e9ebee;
 
     img.img-responsive {
         width: auto;

@@ -1,4 +1,12 @@
+
+
 $(window).on("load", function () {
+    $(".loader").fadeOut(1000, function () {
+        $('body').css("overflow", "visible");
+        $('body').animate({
+            scrollTop: 0
+        }, 1);
+    });
     //map
     var adresse = "<img style='width:50px; text-align: left; display:inline-block; margin-right: 10px; vertical-align: sub;' src='img/logo.png'>";
 
