@@ -1791,6 +1791,14 @@ html[dir=ltr] .contact-info li > a i.icon-phone {
 .news-page-cont .new {
   width: calc(50% - 15px);
 }
+@media (max-width: 767px) {
+  .news-page-cont .new {
+    width: 100%;
+    margin: 0;
+    margin-top: 15px;
+    order: 2;
+  }
+}
 .news-page-cont .news-name {
   color: #333;
 }

@@ -82,7 +82,7 @@ $(document).ready(function () {
         $(".sec-sec .news .new").wrap("<div class='item'></div>");
         $(".sec-sec .news").addClass("owl-carousel");
 
-        $('.news').owlCarousel({
+        $('.sec-sec .news').owlCarousel({
             items: 1,
             margin: 30,
             rtl: document.dir == 'rtl' ? true : false,
