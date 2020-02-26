@@ -89,12 +89,6 @@ html {
   overflow: hidden !important;
 }
 
-@media (min-width: 1440px) {
-  .container {
-    width: 1410px;
-  }
-}
-
 @font-face {
   font-family: "tajwal";
   src: url("../fonts/TAJAWAL/TAJAWAL-REGULAR.TTF");
@@ -902,11 +896,6 @@ html[dir=ltr] .gallery-img {
   margin-left: 0;
   margin-right: 30px;
 }
-@media (min-width: 1440px) {
-  .gallery-img {
-    height: 615px;
-  }
-}
 .gallery-img img {
   width: 100%;
   height: 100%;
@@ -920,19 +909,9 @@ html[dir=ltr] .gallery-img {
 .gallery-img:nth-of-type(2) {
   height: 480px;
 }
-@media (min-width: 1440px) {
-  .gallery-img:nth-of-type(2) {
-    height: 560px;
-  }
-}
 .gallery-img:nth-of-type(5) {
   margin-top: -50px;
   height: 480px;
-}
-@media (min-width: 1440px) {
-  .gallery-img:nth-of-type(5) {
-    height: 560px;
-  }
 }
 .gallery-img:nth-of-type(3n) {
   margin-left: 0;
@@ -1003,27 +982,12 @@ html[dir=ltr] .gallery-img:nth-of-type(3n) {
   width: calc(100% / 4 - 22.5px);
   height: 450px;
 }
-@media (min-width: 1440px) {
-  .gallery-page .gallery-img {
-    height: 450px;
-  }
-}
 .gallery-page .gallery-img:nth-of-type(2) {
   height: 450px;
-}
-@media (min-width: 1440px) {
-  .gallery-page .gallery-img:nth-of-type(2) {
-    height: 450px;
-  }
 }
 .gallery-page .gallery-img:nth-of-type(5) {
   height: 450px;
   margin-top: 0;
-}
-@media (min-width: 1440px) {
-  .gallery-page .gallery-img:nth-of-type(5) {
-    height: 450px;
-  }
 }
 .gallery-page .gallery-img:nth-of-type(3n) {
   margin-left: 30px;
