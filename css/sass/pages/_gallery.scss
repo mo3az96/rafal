@@ -192,3 +192,66 @@
 
 
 }
+
+.filter-slider-sec {
+    margin-bottom: 35px;
+
+    .owl-nav {
+        width: 0;
+        height: 0;
+
+        button[class^=owl-] {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            outline: none;
+            border: none;
+            color: rgba($bg, 0.75);
+            font-size: 18px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.owl-next {
+                left: -10px;
+            }
+
+            &.owl-prev {
+                right: -10px;
+            }
+
+            &:hover {
+                color: $logo;
+            }
+        }
+    }
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    padding: 0 15px;
+    white-space: nowrap;
+    background-color: transparent;
+    color: $bg;
+    font-family: med;
+    font-size: 16px;
+    border: 2px solid $bg;
+    border-radius: 5px;
+    @include transition(all 0.3s ease-in-out);
+    margin: auto;
+    width: min-content;
+
+    &:hover,
+    &:focus {
+        color: $bg;
+        border: 2px solid $logo;
+        background-color: $logo;
+    }
+
+    &.active-filter {
+        pointer-events: none;
+        opacity: 0.5;
+        border: 2px solid $logo;
+    }
+}

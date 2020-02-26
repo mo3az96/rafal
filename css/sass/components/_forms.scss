@@ -10,18 +10,19 @@
     height: 100%;
     padding: 0 25px;
     border-radius: 5px;
-    color: $bg;
+    color: #fff;
     font-size: 17px;
-    border: 2px solid transparent;
+    border: 2px solid $copy;
     @include transition(all 0.3s ease-in-out);
     text-align: right;
+    background-color: transparent;
 
     #{$ltr} & {
         text-align: left;
     }
 
     &::placeholder {
-        color: rgba(0, 0, 0, 0.52);
+        color: rgba(#fff, 0.52);
         font-size: 17px;
         text-align: right;
 
@@ -31,7 +32,7 @@
     }
 
     &:hover {
-        border: 2px solid transparent;
+        border: 2px solid $copy;
     }
 
     &:focus {
@@ -46,7 +47,7 @@
 .newsletter-button {
     position: absolute;
     font-size: 20px;
-    color: $bg;
+    color: #fff;
     left: 20px;
     top: 0;
     height: 100%;

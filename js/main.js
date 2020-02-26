@@ -55,6 +55,36 @@ $(document).ready(function () {
         navText: ["<span class='icon-arrow-right'></span>", "<span class='icon-arrow-left'></span>"],
     });
 
+    /////////Brands Slider/////////
+    $('.filter-slider').owlCarousel({
+        items: 9,
+        stagePadding: 1,
+        margin: 31,
+        rtl: document.dir == 'rtl' ? true : false,
+        loop: false,
+        rewind: false,
+        autoplay: false,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 2,
+                margin: 15,
+                nav: true,
+                navText: ["<span class='icon-arrow-right'></span>", "<span class='icon-arrow-left'></span>"],
+            },
+            500: {
+                items: 4,
+            },
+            992: {
+                items: 5,
+            },
+            1200: {
+                items: 9
+            }
+        }
+    });
+
     $("#topBtn").click(function () {
         $('html, body').animate({
             scrollTop: $("#topBtnRef").offset().top
@@ -81,7 +111,6 @@ $(document).ready(function () {
         $(".clients").addClass("owl-carousel");
         $(".sec-sec .news .new").wrap("<div class='item'></div>");
         $(".sec-sec .news").addClass("owl-carousel");
-
         $('.sec-sec .news').owlCarousel({
             items: 1,
             margin: 30,
