@@ -329,6 +329,10 @@ nav img.img-responsive {
 }
 nav .social {
   display: none;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 @media (max-width: 767px) {
   nav .social {
@@ -365,8 +369,8 @@ nav .nav-ul.open {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding: 100px 25px;
+    justify-content: center;
+    padding: 0 25px;
     -moz-transition: all 0.8s ease-in-out;
     -o-transition: all 0.8s ease-in-out;
     -webkit-transition: all 0.8s ease-in-out;
