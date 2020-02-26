@@ -316,7 +316,7 @@ nav {
 }
 nav img.img-responsive {
   display: none;
-  width: 50px;
+  width: 100px;
   position: absolute;
   top: 25px;
   left: 50%;
