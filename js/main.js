@@ -42,6 +42,19 @@ $(window).on("load", function () {
 
 
 $(document).ready(function () {
+    /////////Main Slider/////////
+    $('.main-slider').owlCarousel({
+        items: 1,
+        margin: 30,
+        autoplay: false,
+        rtl: document.dir == 'rtl' ? true : false,
+        loop: true,
+        rewind: true,
+        dots: false,
+        nav: true,
+        navText: ["<span class='icon-arrow-right'></span>", "<span class='icon-arrow-left'></span>"],
+    });
+
     $("#topBtn").click(function () {
         $('html, body').animate({
             scrollTop: $("#topBtnRef").offset().top
@@ -66,7 +79,19 @@ $(document).ready(function () {
         $(".gallery").addClass("owl-carousel");
         $(".clients .client").wrap("<div class='item'></div>");
         $(".clients").addClass("owl-carousel");
+        $(".sec-sec .news .new").wrap("<div class='item'></div>");
+        $(".sec-sec .news").addClass("owl-carousel");
 
+        $('.news').owlCarousel({
+            items: 1,
+            margin: 30,
+            rtl: document.dir == 'rtl' ? true : false,
+            loop: true,
+            rewind: true,
+            autoplay: false,
+            nav: false,
+            dots: true,
+        });
         $('.clients').owlCarousel({
             items: 2,
             margin: 30,

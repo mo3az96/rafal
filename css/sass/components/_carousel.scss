@@ -26,6 +26,24 @@
             }
         }
     }
+
+    &.main-slider {
+        .owl-dots {
+            display: none !important;
+
+            .owl-dot {
+                background: rgba($bg, 0.502);
+
+                &.active {
+                    background: $logo;
+                }
+
+                &:hover {
+                    background: $logo;
+                }
+            }
+        }
+    }
 }
 
 .gallery-cont {
