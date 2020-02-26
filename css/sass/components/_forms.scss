@@ -2,6 +2,7 @@
     width: 100%;
     height: 45px;
     position: relative;
+    margin-top: 23px;
 }
 
 .newsletter-input {
@@ -58,6 +59,15 @@
 
     &:hover {
         color: $gold;
+    }
+
+    &:after {
+        font-family: 'icomoon' !important;
+        content: "\e908";
+
+        #{$ltr} & {
+            content: "\e907";
+        }
     }
 
     #{$ltr} & {
@@ -169,6 +179,7 @@
     font-family: bold;
     @include transition(all 0.3s ease-in-out);
     position: relative;
+    border-radius: 5px;
 
     &:hover {
         background-color: rgba($bg, 0.95);

@@ -60,13 +60,21 @@ footer {
     .foot-header {
         color: #fff;
         font-family: bold;
-        font-size: 30px;
-        margin-bottom: 25px;
-        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 35px;
 
         @include sm {
             text-align: center;
-            font-size: 25px;
+        }
+    }
+
+    .newsletter-info {
+        font-size: 16px;
+        color: #fff;
+
+        @include sm {
+            text-align: center;
         }
     }
 

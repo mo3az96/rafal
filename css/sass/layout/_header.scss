@@ -130,6 +130,15 @@ header {
         .header {
             @include xs {
                 padding: 15px 0;
+                align-items: flex-start;
+
+                .menubtn {
+                    margin-top: 10px;
+                }
+
+                .lang {
+                    margin-top: 10px;
+                }
             }
         }
 
