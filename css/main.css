@@ -307,6 +307,7 @@ nav {
   height: 100%;
   z-index: 9;
   display: none;
+  overflow-y: auto;
 }
 @media (max-width: 767px) {
   nav {
@@ -355,6 +356,7 @@ nav .nav-ul {
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  min-height: 600px;
 }
 html[dir=ltr] nav .nav-ul {
   transform-origin: left;
