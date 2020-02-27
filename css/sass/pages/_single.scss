@@ -141,6 +141,10 @@
     transform: translateX(-50%);
     z-index: 999;
 
+    @include xs {
+        top: 50px;
+    }
+
     span {
         width: 25px;
         height: 2px;

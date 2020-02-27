@@ -69,7 +69,7 @@ nav {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 0 25px;
+            padding: 170px 0 100px;
             @include transition(all 0.8s ease-in-out);
         }
     }
@@ -107,6 +107,10 @@ nav {
         #{$ltr} & {
             padding-left: 26px;
             padding-right: 0;
+        }
+
+        @include xs {
+            padding: 170px 0 100px;
         }
     }
 

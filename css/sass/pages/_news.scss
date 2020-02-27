@@ -117,15 +117,21 @@
     }
 
     .news-read {
-        text-decoration: underline;
         color: #b5b5b5;
         font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        border: 1px solid $bg;
         @include transition(all 0.3s ease-in-out);
         cursor: pointer;
+        height: 36px;
 
         &:hover {
-            color: $logo;
-            text-decoration: none;
+            color: #fff;
+            border-color: $logo;
+            background-color: $logo;
         }
     }
 }
@@ -165,17 +171,6 @@
 
     .news-info {
         color: $copy;
-    }
-
-    .news-read {
-
-        color: $bg;
-
-
-        &:hover {
-            color: $logo;
-
-        }
     }
 }
 
