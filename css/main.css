@@ -1362,6 +1362,11 @@ html[dir=ltr] .singlebtn {
   z-index: 99;
   display: none;
 }
+@media (max-width: 767px) {
+  .model-fixed {
+    overflow-y: auto;
+  }
+}
 .model-fixed .model-cont {
   position: absolute;
   top: 0;
@@ -1372,6 +1377,11 @@ html[dir=ltr] .singlebtn {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  .model-fixed .model-cont {
+    align-items: flex-start;
+  }
 }
 .model-fixed .have-modal {
   width: 529px;
@@ -1392,7 +1402,7 @@ html[dir=ltr] .singlebtn {
 @media (max-width: 767px) {
   .model-fixed .have-modal {
     width: 90%;
-    margin-top: 100px;
+    margin: 100px 0;
   }
 }
 .model-fixed .modal-head {

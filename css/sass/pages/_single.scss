@@ -81,6 +81,10 @@
     z-index: 99;
     display: none;
 
+    @include xs {
+        overflow-y: auto;
+    }
+
     .model-cont {
         position: absolute;
         top: 0;
@@ -91,6 +95,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include xs {
+            align-items: flex-start;
+        }
     }
 
     .have-modal {
@@ -109,7 +117,7 @@
 
         @include xs {
             width: 90%;
-            margin-top: 100px;
+            margin: 100px 0;
 
         }
     }
