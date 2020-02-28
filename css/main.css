@@ -356,7 +356,11 @@ nav .nav-ul {
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  min-height: 600px;
+}
+@media (max-width: 767px) {
+  nav .nav-ul {
+    min-height: 600px;
+  }
 }
 html[dir=ltr] nav .nav-ul {
   transform-origin: left;
@@ -1795,12 +1799,12 @@ html[dir=ltr] .contact-info li > a i.icon-phone {
     justify-content: center;
   }
 }
-.news-sec-cont img {
-  width: 30%;
+.news-sec-cont .patimg {
+  min-width: 30%;
   position: relative;
 }
 @media (max-width: 767px) {
-  .news-sec-cont img {
+  .news-sec-cont .patimg {
     width: 100%;
   }
 }

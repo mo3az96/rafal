@@ -6,6 +6,7 @@ $(window).on("load", function () {
         $('body').animate({
             scrollTop: 0
         }, 1);
+        new WOW().init();
     });
     //map
     var adresse = "<img style='width:50px; text-align: left; display:inline-block; margin-right: 10px; vertical-align: sub;' src='img/logo.png'>";
